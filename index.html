@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Optimal Hedge Ratio Calculator</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- radio -->
+  <input type="radio" id="optimalhedgeratioRadio" name="variables" checked>
+  <label for="optimalhedgeratioRadio">Optimal hedge ratio</label>
+
+  <input type="radio" id="sDofchangesinspotpriceRadio" name="variables">
+  <label for="sDofchangesinspotpriceRadio">SD. of changes in spot price</label>
+
+  <input type="radio" id="sDofchangesinfuturepriceRadio" name="variables">
+  <label for="sDofchangesinfuturepriceRadio">SD. of changes in future price</label>
+
+  <input type="radio" id="correlationcoefficientRadio" name="variables">
+  <label for="correlationcoefficientRadio">Correlation coefficient</label><br><br>
+  <!-- end radio -->
+  
+  <label for="v1" id="variable1">SD. of changes in spot price</label>
+  <input type="number" id="v1"><br><br>
+  
+  <label for="v2" id="variable2">SD. of changes in future price</label>
+  <input type="number" id="v2"><br><br>
+  
+  <label for="v3" id="variable3">Correlation coefficient</label>
+  <input type="number" id="v3"><br><br>
+
+  <button id="btn">compute</button>
+
+  <p id="result"></p>
+  <script src="app.js"></script>
+</body>
+</html>
